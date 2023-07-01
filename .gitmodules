@@ -1,0 +1,7 @@
+[submodule "themes/poison"]
+path=themes/poison
+url=git@github.com:lukeorth/poison.git
+
+[submodule "public"]
+path = public
+url = git@github.com:cocobeane702/cocobeane702.github.io
