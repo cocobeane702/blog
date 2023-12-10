@@ -1,31 +1,59 @@
 baseURL = "https://cocobeane702.github.io/blog"
 languageCode = 'ko-KR'
-title = 'cocobeane'
+title = "cocobeane's blog"
 theme = 'mainroad'
 paginate = 10
-pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
-
+# pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 # disqusShortname = "yourDisqusShortname"
 utterance = true
 
+[markup.goldmark.renderer]
+unsafe = true
+
+[menu]
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Tags"
+  url = "/tags"
+  weight = 2
+[[menu.main]]
+  name = "Categories"
+  url = "/categories"
+  weight = 3  
+[[menu.main]]
+  name = "Posts"
+  url = "/posts"
+  weight = 4  
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 5  
+
 [Author]
-  name = "John Doe"
-  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  name = "cocobeane"
+  bio = "1x년차 백엔드 개발자이자 죽을 때까지 성장하고 싶은 리더입니다."
   avatar = "img/avatar.png"
 
 [Params]
-  description = "John Doe's Personal blog about everything" # Description of your site
+  description = "코코빈의 블로그" # Description of your site
   opengraph = true
   twitter_cards = false
-  readmore = false # Show "Read more" button in list if true
+  readmore = true # Show "Read more" button in list if true
   authorbox = true
+  toc = true
   pager = true
   post_meta = ["date", "categories"] # Order of post meta information
-  mainSections = ["posts", "docs"]
+  mainSections = ["home","posts", "docs"]
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Speci
 
 [Params.logo]
-  subtitle = "Just another site" # Logo subtitle
+  subtitle = "어제보다 더 나은 오늘을 위해!" # Logo subtitle
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
