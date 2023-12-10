@@ -1,4 +1,4 @@
-baseURL = "https://cocobeane702.github.io"
+baseURL = "https://cocobeane702.github.io/blog"
 languageCode = 'ko-KR'
 title = 'cocobeane'
 theme = 'poison'
@@ -28,7 +28,7 @@ utterance = true
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use.
-    github_url = "https://github.com/cocobeane702"
+    github_url = "https://github.com/cocobeane702/blog"
     #gitlab_url = "https://gitlab.com"
     #linkedin_url = "https://linkedin.com"
     #twitter_url = "https://twitter.com"
