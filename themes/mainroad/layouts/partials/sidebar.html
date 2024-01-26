@@ -8,8 +8,15 @@
 {{ end }}
 
 {{- if $sidebar -}}
+
 <aside class="sidebar{{ if eq $sidebar "left" }} sidebar--left{{ end }}">
+	<div>
+		<a href="https://hits.seeyoufarm.com">
+			<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcocobeane702.github.io%2Fblog%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=%EB%B0%A9%EB%AC%B8%EC%9E%90%EC%88%98&edge_flat=false"/>
+		</a>
+	</div>
 {{- $root := . }}
+
 {{- with (default .Site.Params.sidebar.widgets .Params.widgets) -}}
 	{{- range $widget := . }}
 		{{- $widgetPath := printf "widgets/%s.html" $widget }}
@@ -23,6 +30,7 @@
 			{{- partial $widgetPath $root }}
 		{{- end }}
 	{{- end }}
+	
 {{- else }}
 	<p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}</p>
 {{- end }}
